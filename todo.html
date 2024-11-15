@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-900 flex items-center justify-center min-h-screen">
+  
+  <div class="bg-white h-[440px] w-[500px] rounded-lg shadow-lg p-5">
+    <h1 class="text-4xl text-center font-semibold mb-5">TO DO APP</h1>
+
+    <div class="flex items-center justify-between mb-5">
+      <input id="inputbox" class="outline-none shadow-lg px-4 py-2 rounded-full border border-gray-300 w-[70%] text-lg" placeholder="Enter some notes" type="text">
+      <button onclick="addtask()" class="bg-black text-white py-2 px-4 rounded-full text-lg font-medium ml-3">ADD</button>
+    </div>
+
+    <ul id="listbox" class="list-none space-y-3 text-lg" id="listbox">
+      <!-- Task items will appear here -->
+    </ul>
+
+  </div>
+
+  <script src="todo.js"></script>
+</body>
+</html>
